@@ -1,3 +1,8 @@
 import { createContext } from "react";
+import { User } from "../../utils/interfaces";
 
-export const SearchContext = createContext({ users: [] });
+type contextType = {
+  users: User[];
+};
+
+export const SearchContext = createContext<contextType>({ users: [] });
